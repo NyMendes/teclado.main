@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a visualização para dispositivos variados -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Inclui a biblioteca ResponsiveVoice para síntese de voz -->
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <!-- Links para as fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importa as fontes Chakra Petch e Inter para uso no documento -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Game</title>
+    
+    <script>
+        document.addEventListener("keydown", function(event){
+            if(event.ctrlKey && event.key === "r") {
+                window.location.href = '#sobre';
+            }
+            if(event.ctrlKey && event.key === "i") {
+                window.open("livro.png");
+            }
+            if(event.ctrlKey && event.key === "m") {
+                document.getElementById("mensagem").focus();
+            }
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div><h1>Atalhos de Teclado</h1></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Home</h1>
+            <p>Texto descritivo sobre o tema escolhido.</p>
+            <p>Atalhos de teclado: CTRL + R (Sobre), CTRL + I (Imagem), CTRL + M (Mensagem)</p>
+            <img id="imagem" src="livro.png" alt="Livros empilhados">
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem aqui">
+            <button>Enviar</button>
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+            <img id="imagem" src="celular.png" alt="Mão segurando celular">
+            <!-- Conteúdo de contato -->
+        </section>
+        <section id="sobre">
+            <h1>Sobre</h1>
+            <img id="imagem" src="pergunta.png" alt= "Quatro simbolos coloridos de interrogação">
+            <!-- Conteúdo sobre -->
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por Nicoly Cristina
+    </footer>
+</body>
+</html>

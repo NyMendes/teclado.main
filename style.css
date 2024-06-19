@@ -1,0 +1,112 @@
+body {
+    background-color: #f0f0f0; /* Cor de fundo cinza para o corpo */
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+header {
+    background-color: #5406ad; /* Cor de fundo cinza escuro para o cabeçalho */
+    color: #fff; /* Cor do texto branco para o cabeçalho */
+
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav div{
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+nav div h1{
+    font-size: 2rem;
+}
+ul, li , div, p, h1, h2, span, a, img{
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+nav ul {
+  
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    height: 1.5rem;
+    list-style: none; /* Remove marcadores de lista */
+    margin: 0; /* Remove margem padrão */
+    padding: 0 0 0 2rem ; /* Remove preenchimento padrão */
+}
+
+nav ul li {
+    width: 5rem;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Exibe os itens da lista horizontalmente */
+    color: transparent;
+}
+nav ul li:hover {
+  background-color: rgb(147, 64, 224);
+}
+nav ul li a {
+    margin: auto;
+    color: #fff; /* Cor do texto branco para os links do menu */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+main {
+    padding: 20px; /* Adiciona um espaço interno ao conteúdo principal */
+
+}
+
+section {
+    margin-bottom: 20px; /* Adiciona um espaço entre as seções */
+    padding: 20px; /* Adiciona um espaço interno às seções */
+    background-color: #fff; /* Cor de fundo branca para as seções */
+    border-radius: 5px; /* Adiciona cantos arredondados às seções */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color: #5406ad; /* Cor de fundo cinza escuro para o rodapé */
+    color: #fff; /* Cor do texto branco para o rodapé */
+    padding: 10px; /* Adiciona um espaço interno ao rodapé */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 20px; /* Adiciona um espaço superior ao rodapé */
+}
+
+/* Estilos adicionais específicos para elementos dentro da seção #home */
+#contato {
+    height: 20rem;
+    background-color: #f9f9f9; /* Cor de fundo cinza claro para a seção #home */
+    position: relative; /* Defina a posição relativa para que possamos posicionar a imagem absolutamente dentro desta seção */
+}
+#home {
+    height: 20rem;
+    position: relative;
+
+}
+#sobre {
+    height: 20rem;
+    position: relative;
+   
+}
+
+#home a {
+    color: #333; /* Cor do texto cinza escuro para os links dentro da seção #home */
+}
+
+#imagem {
+position: absolute; /* Posiciona a imagem absolutamente dentro da seção */
+top: 50px; /* Posiciona a imagem no topo da seção */
+right: 50px; /* Posiciona a imagem à direita da seção */
+width: 20%; /* Defina o tamanho máximo da imagem */
+}
